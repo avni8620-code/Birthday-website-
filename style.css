@@ -1,0 +1,49 @@
+/* Basic styling for Birthday-website-
+   Created by GitHub Copilot assistant to enable running the site locally/GitHub Pages
+*/
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#ff6b6b;
+  --accent-2:#7c3aed;
+  --muted:#98a8c7;
+  --glass: rgba(255,255,255,0.04);
+}
+
+*{box-sizing:border-box;margin:0;padding:0;font-family: 'Segoe UI', Roboto, Arial, sans-serif}
+html,body,#root{height:100%}
+body{background:linear-gradient(180deg, #071124 0%, #071a2b 60%);color:#e6eef8;display:flex;align-items:center;justify-content:center;padding:32px}
+.container{width:100%;max-width:960px}
+.screen{display:none;padding:28px;background:var(--glass);border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6);backdrop-filter: blur(6px)}
+.screen.active{display:block}
+.question-box{text-align:center;padding:48px}
+.glow-text{font-size:2.2rem;margin-bottom:8px;color:var(--accent);text-shadow:0 0 18px rgba(255,107,107,0.18),0 0 40px rgba(124,58,237,0.06)}
+.subtitle{color:var(--muted);margin-bottom:20px}
+.button-container{display:flex;gap:12px;justify-content:center}
+.btn{cursor:pointer;padding:12px 20px;border-radius:10px;border:0;font-weight:600;transition:transform .12s ease,box-shadow .12s;}
+.btn:active{transform:translateY(1px)}
+.btn-yes{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;box-shadow:0 6px 18px rgba(124,58,237,0.12)}
+.btn-no{background:transparent;color:#cbd7ee;border:2px solid rgba(255,255,255,0.04)}
+.btn-large{padding:14px 28px;font-size:1.05rem}
+.no-box{text-align:center;padding:36px}
+.playful-text{font-size:1.4rem;color:#ffc7c7}
+.knife-emoji{font-size:3rem;margin:12px 0}
+.small-text{color:var(--muted);margin-top:10px}
+.presentation-content{padding:24px}
+.back-btn{background:transparent;border:0;color:var(--muted);cursor:pointer;margin-bottom:12px}
+.birthday-title{text-align:center;font-size:1.9rem;margin-bottom:16px}
+.compliments-box{min-height:140px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:10px}
+.compliment-slide{opacity:0;transform:translateY(6px);transition:opacity .36s,transform .36s;max-width:860px}
+.compliment-slide.active{opacity:1;transform:none}
+.compliment-text{font-size:1.05rem;color:#f8fbff;text-align:center;padding:8px 12px}
+.page-indicator{margin-top:12px;text-align:center;color:var(--muted)}
+.nav-buttons{display:flex;gap:12px;justify-content:center;margin-top:14px}
+.nav-btn{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:8px 14px;border-radius:8px}
+.cake-emoji{display:flex;gap:10px;justify-content:center;margin-top:18px;font-size:1.5rem}
+
+/* Responsive */
+@media (max-width:600px){
+  .glow-text{font-size:1.6rem}
+  .birthday-title{font-size:1.6rem}
+  .container{padding:8px}
+}
