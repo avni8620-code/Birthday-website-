@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Birthday Surprise! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="questionScreen" class="screen active">
+            <div class="question-box">
+                <h1 class="glow-text">✨ Are you ready? ✨</h1>
+                <p class="subtitle">Let's celebrate YOU! 🎂</p>
+                <div class="button-container">
+                    <button id="yesBtn" class="btn btn-yes">YES! 🎉</button>
+                    <button id="noBtn" class="btn btn-no">No</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="noScreen" class="screen">
+            <div class="no-box">
+                <h2 class="playful-text">You have no choice! 🔪🔪</h2>
+                <p class="knife-emoji">🔪</p>
+                <button id="noToYesBtn" class="btn btn-yes btn-large">Click YES!</button>
+                <p class="small-text">or else... katti 🔪</p>
+            </div>
+        </div>
+
+        <div id="presentationScreen" class="screen">
+            <button id="backBtn" class="back-btn">← Back</button>
+            <div class="presentation-content">
+                <h1 class="birthday-title">🎉 HAPPY BIRTHDAY RAKSHIT! 🎉</h1>
+                <div class="compliments-box">
+                    <div class="compliment-slide active">
+                        <p class="compliment-text">Happppyyyyyy birthdayyyyyy The Rakshit 🔥</p>
+                    </div>
+                    <div class="compliment-slide">
+                        <p class="compliment-text">You are not just good friend, the bestest person anyone can ever have 💚</p>
+                    </div>
+                    <div class="compliment-slide">
+                        <p class="compliment-text">You are an incredible person ✨</p>
+                    </div>
+                    <div class="compliment-slide">
+                        <p class="compliment-text">I love whatever is wrong with you 💕</p>
+                    </div>
+                    <div class="compliment-slide">
+                        <p class="compliment-text">If you ever feel low just run to me 🏃</p>
+                    </div>
+                    <div class="compliment-slide">
+                        <p class="compliment-text">I don't want us to ever become strangers 🤝</p>
+                    </div>
+                    <div class="compliment-slide">
+                        <p class="compliment-text">Sorry for annoying you sometimes 😅</p>
+                    </div>
+                    <div class="compliment-slide">
+                        <p class="compliment-text">You are really a gentleman. I will always understand how strong you are, how responsible and hardworking you are 💪</p>
+                    </div>
+                    <div class="compliment-slide">
+                        <p class="compliment-text">I really manifest a good healthy happy life for you where you are enjoying everything you want, getting everything you want... 🌟✨</p>
+                    </div>
+                    <div class="compliment-slide">
+                        <p class="compliment-text">Once again happy birthday! 🎉🎂💚</p>
+                    </div>
+                </div>
+
+                <div class="page-indicator">
+                    <span id="pageNumber">1</span> / 10
+                </div>
+
+                <div class="nav-buttons">
+                    <button id="prevBtn" class="nav-btn">← Previous</button>
+                    <button id="nextBtn" class="nav-btn">Next →</button>
+                </div>
+
+                <div class="cake-emoji">
+                    <span>🎂</span>
+                    <span>🎈</span>
+                    <span>🎊</span>
+                    <span>🎁</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
